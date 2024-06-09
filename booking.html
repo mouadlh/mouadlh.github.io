@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="booking-style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Booking</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg" style="background-color: #ffffff;">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">FitNow</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#footer">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn btn-outline-dark" href="booking.html">Book Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Separator -->
+    <div class="separator" style="background-color: #ffffff;"></div>
+
+    <div class="booking-container">
+        <h1>Book Your Appointment</h1>
+        <form id="bookingForm">
+            <div class="details-section">
+                <div class="client-details form-section">
+                    <h2>1. Client Details</h2>
+                    <input type="text" id="name" placeholder="Name and Surname" required>
+                    <input type="date" id="dob" placeholder="Date of Birth" required>
+                    <input type="text" id="address" placeholder="Billing Address" required>
+                    <input type="text" id="postal-code" placeholder="Postal Code" required>
+                    <input type="text" id="city" placeholder="City" required>
+                </div>
+                <div class="contact-details form-section">
+                    <h2>2. Contact Details</h2>
+                    <input type="email" id="email" placeholder="Email Address" required>
+                    <input type="text" id="prefix" placeholder="Prefix" required>
+                    <input type="tel" id="phone" placeholder="Phone Number" required>
+                </div>
+            </div>
+
+            <div class="program-section">
+                <h2>Click on your program</h2>
+                <div class="program-options">
+                    <button type="button" class="program-btn">Weight</button>
+                    <button type="button" class="program-btn">Rehab</button>
+                    <button type="button" class="program-btn">Weight loss</button>
+                    <button type="button" class="program-btn">Yoga</button>
+                    <button type="button" class="program-btn">Nutrition</button>
+                    <button type="button" class="program-btn">Endurance</button>
+                    <button type="button" class="program-btn">Flexibility</button>
+                    <button type="button" class="program-btn">Cross</button>
+                </div>
+            </div>
+
+            <div class="expert-section">
+                <h2>Expert team</h2>
+                <div class="expert-options">
+                    <div class="expert-card">
+                        <img src="img/Shaun.jpeg" alt="Shaun Stafford">
+                        <p>Shaun Stafford<br>Personal Trainer</p>
+                    </div>
+                    <div class="expert-card">
+                        <img src="img/Andrea.webp" alt="Andrea Soares">
+                        <p>Andrea Soares<br>Nutrition Coach</p>
+                    </div>
+                    <div class="expert-card">
+                        <img src="img/kayla.jpeg" alt="Kayla Itsines">
+                        <p>Kayla Itsines<br>Personal Trainer</p>
+                    </div>
+                    <div class="expert-card">
+                        <img src="img/Lucas.jpeg" alt="Lucas Sheehan">
+                        <p>Lucas Sheehan<br>Wellness Specialist</p>
+                    </div>
+                    <div class="expert-card">
+                        <img src="img/Kathryn.jpeg" alt="Kathryn Budig">
+                        <p>Kathryn Budig<br>Yoga Teacher</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="appointments-section">
+                <h2>Upcoming Appointment</h2>
+                <div id="calendar"></div>
+                <input type="time" id="time-input" required>
+                <div id="program-appointment"></div>
+                <div id="expert-appointment"></div>
+            </div>
+
+            <div class="book-now-section">
+                <button type="submit" id="book-now" class="btn btn-primary" disabled>Book Now</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Separator -->
+    <div class="separator" style="background-color: #ffffff;"></div>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <h5>FitNow</h5>
+                    <p>Empowering you since 2023!</p>
+                    <p>FitNow © 2023</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Working Hours</h5>
+                    <p>mon-fri: 6am-10pm</p>
+                    <p>sat-sun: 9am-8pm</p>
+                    <p>holidays: closed</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Contact Us</h5>
+                    <p><i class="fa fa-phone"></i> (613) 653-2154</p>
+                    <p><i class="fa fa-envelope"></i> <a href="mailto:Support@FitNow.ca">Support@FitNow.ca</a></p>
+                    <p><i class="fa fa-map-marker"></i> 343 Laurier, Ottawa</p>
+                </div>
+                <div class="col-md-3">
+                    <h5>Support</h5>
+                    <p><a href="#">Help Center</a></p>
+                    <p><a href="#">Live Chat</a></p>
+                    <p><a href="#">How It Works</a></p>
+                    <p><a href="#">Contact Support</a></p>
+                </div>
+
+                <div class="col-md-3">
+                    <h5>Connect with Us</h5>
+                    <a href="https://fr-ca.facebook.com/login.php/" target="_blank"><i class="fa fa-facebook fa-2x"></i></a>
+                    <a href="https://x.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJteCI6IjIifQ%3D%3D%22%7D" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+                    <a href="https://www.instagram.com/accounts/login/?hl=fr" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

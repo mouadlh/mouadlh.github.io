@@ -1,0 +1,402 @@
+body {
+    font-family: 'Arial', sans-serif;
+    color: #282830;
+    background-color: #1C1C1C;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.hero-section {
+    position: relative;
+    background: url('img/back2.jpeg') no-repeat center center/cover;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 100px 20px;
+    margin: 0px; /* Ajoute un espace de 20px autour de la section */
+    overflow: hidden; /* Assure que l'image de fond respecte les coins arrondis */
+    min-height: 75vh; /* Définit une hauteur minimale de 75% de la hauteur de la fenêtre */
+    color: #fff;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Assombrit l'image pour une meilleure lisibilité du texte */
+    z-index: 1;
+    
+}
+
+.hero-section .container {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.programs .card {
+    background-color: #d3d3d3; /* Change le fond des cartes en gris clair */
+    border: none; /* Supprime la bordure des cartes */
+    margin: 0; /* Supprime la marge */
+    display: flex; /* Utilisation de flexbox pour une meilleure gestion de l'espace */
+    flex-direction: column; /* Les enfants sont disposés en colonne */
+    justify-content: space-between; /* Assure un espacement cohérent entre les éléments */
+    height: 100%; /* Assure que toutes les cartes ont la même hauteur */
+}
+
+.programs .row {
+    display: flex; /* Utilisation de flexbox pour la ligne */
+    flex-wrap: wrap; /* Permet aux éléments de se replier */
+    margin: -15px; /* Enlève la marge entre les cartes */
+}
+
+.programs .col-md-3 {
+    display: flex; /* Utilisation de flexbox pour la colonne */
+    flex-direction: column; /* Les enfants sont disposés en colonne */
+    padding: 15px; /* Ajoute un padding autour des cartes */
+}
+
+.programs .card-title,
+.experts .card-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.footer {
+    background-color: #282830; /* Couleur du footer */
+    padding: 20px 0;
+    color: #fff;
+}
+
+.navbar {
+    background-color: #282830; /* Assure que la couleur de fond du header est la même que celle du footer */
+}
+
+.footer h5 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+.footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Styles ajoutés pour l'image et la carte */
+.card-img-top {
+    height: 50%; /* L'image couvre la moitié de la carte */
+    object-fit: cover; /* L'image couvre l'espace sans déformation */
+}
+
+.card {
+    background-color: #d3d3d3; /* Change le fond de la carte en gris clair */
+    border: none; /* Supprime la bordure de la carte */
+    margin: 0; /* Supprime la marge */
+}
+
+.card-body {
+    padding: 15px; /* Ajoute un léger padding autour du contenu de la carte */
+}
+
+.expert-card {
+    background-color: #d3d3d3; /* Même gris que les cartes de programme */
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    border: none;
+}
+
+.expert-card img {
+    border-radius: 10px 10px 0 0;
+    object-fit: cover; /* Assure que l'image couvre sans distorsion */
+    height: 250px; /* Ajuste la hauteur pour un meilleur cadrage */
+    width: 100%; /* Assure que l'image couvre toute la largeur */
+}
+
+.expert-card .card-body h5,
+.expert-card .card-body p {
+    color: #000 !important; /* Change la couleur du texte en noir */
+}
+
+.rating-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px; /* Déplacez à gauche */
+    background-color: #FFD700;
+    color: #000;
+    padding: 5px 10px;
+    border-radius: 50%;
+    font-weight: bold;
+}
+
+.heart-icon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #000; /* Change the color to black */
+    font-size: 20px;
+}
+
+
+/* Réduit l'espace entre les sections */
+section {
+    padding: 20px 0; /* Ajustez la valeur pour réduire l'espace */
+}
+
+/* Style pour les titres "Programs" et "Top-rated experts" */
+.programs-title,
+.experts-title {
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px; /* Ajustez si nécessaire */
+}
+
+.programs-title {
+    margin-top: 20px; /* Ajustez pour réduire l'espace en haut */
+}
+
+/* Réduction de l'espace entre les sections Programs et Experts */
+.programs {
+    padding-bottom: 20px; /* Réduit l'espace en bas de la section Programs */
+}
+
+.experts {
+    padding-top: 20px; /* Réduit l'espace en haut de la section Experts */
+}
+
+.programs-title,
+.experts-title {
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px; /* Ajustez pour réduire l'espace sous le titre */
+}
+
+.programs-title {
+    margin-top: 10px; /* Ajustez pour réduire l'espace au-dessus du titre */
+}
+
+/* Style for the Book Us button in the header */
+.navbar-nav .btn-outline-dark {
+    background-color: #007bff; /* Blue color */
+    border-color: #007bff; /* Blue border color */
+    color: #fff; /* White text color */
+}
+
+.navbar-nav .btn-outline-dark:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    border-color: #0056b3; /* Darker blue border on hover */
+    color: #fff; /* White text color */
+}
+
+/* Ensure consistency for the Book now buttons */
+.btn-primary {
+    background-color: #007bff; /* Blue color */
+    border-color: #007bff; /* Blue border color */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    border-color: #0056b3; /* Darker blue border on hover */
+}
+
+.navbar-nav .nav-item {
+    margin-right: 15px; /* Add space between the items */
+}
+
+.navbar-nav .nav-item:last-child {
+    margin-right: 0; /* Remove margin from the last item */
+}
+
+.footer {
+    background-color: #ffffff; /* Ensure the background is white */
+    padding: 20px 0;
+    color: #282830; /* Set the text color */
+}
+
+.footer .container {
+    max-width: 1140px; /* Adjust the max width to match the cards */
+    margin: 0 auto; /* Center the container */
+    padding: 0 15px; /* Add some padding for spacing */
+}
+
+.footer .row {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out the columns evenly */
+    flex-wrap: nowrap; /* Prevent wrapping to keep everything in one line */
+}
+
+.footer h5 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer p {
+    margin: 0;
+    line-height: 1.5;
+    color: #282830; /* Set the text color to match the other text */
+}
+
+.footer a {
+    color: #282830; /* Set the link color to match the other text */
+    text-decoration: none;
+    margin-right: 10px; /* Space between social icons */
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer .col-md-3 {
+    flex: 1; /* Allow the columns to grow equally */
+    padding: 10px;
+    min-width: 200px; /* Ensure a minimum width for smaller screens */
+}
+
+.footer .fa {
+    font-size: 1.5rem; /* Reduce the size of the social icons */
+    margin-right: 10px; /* Add space between social icons */
+}
+
+.separator {
+    border: none;
+    border-top: 2px solid rgba(44, 8, 8, 0.301); /* Traité de séparation noir */
+    background-color: white; /* Fond blanc */
+}
+
+/* About Us Section */
+.about-us {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.about-us .container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-us h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.about-us img {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.full-width-image img {
+    width: 100%; /* Ensure the image covers the full width */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 0; /* Remove top margin */
+}
+
+nav.navbar {
+    margin-bottom: 10px; /* Reduced bottom margin of the navbar */
+}
+
+.about-us {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-text {
+    flex: 1;
+    padding-right: 20px;
+    text-align: left;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+    .about-text {
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+}
+
+/* Ajout pour supprimer l'espace entre le header et le body */
+.navbar + .programs-info {
+    margin-top: -10px; /* Supprime la marge au-dessus de la section programs-info */
+    padding-top: 0; /* Supprime le padding au-dessus de la section programs-info */
+}
+
+/* Ajout pour supprimer l'espace entre le header et le body */
+.navbar + .hero-section {
+    margin-top: -10px; /* Supprime la marge au-dessus de la section programs-info */
+    padding-top: 0; /* Supprime le padding au-dessus de la section programs-info */
+}
+
+/* Styles pour le bouton "More" */
+.btn-more {
+    background-color: #ffffff; /* Couleur blanche */
+    border: none; /* Pas de bordure */
+    color: #007bff; /* Couleur du texte noir */
+    border-radius: 50%; /* Bouton rond */
+    padding: 10px 15px; /* Espacement interne */
+    font-size: 14px; /* Taille du texte */
+    font-weight: bold; /* Texte en gras */
+    margin-top: 10px; /* Marge supérieure pour espacer des autres éléments */
+}
+
+.btn-more:hover {
+    background-color: #f0f0f0; /* Couleur légèrement plus foncée au survol */
+}
+
+/* Ajout de l'espacement et de l'alignement pour les boutons */
+.card-body a {
+    margin: 5px; /* Ajoute un espacement entre les boutons */
+    display: inline-block; /* Assure que les boutons sont en ligne */
+}

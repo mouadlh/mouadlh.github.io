@@ -1,0 +1,498 @@
+/* Navbar */
+
+nav.navbar {
+    margin-bottom: 10px; /* Reduced bottom margin of the navbar */
+}
+
+
+.navbar-nav .nav-item {
+    margin-right: 15px; /* Add space between the items */
+}
+
+.navbar-nav .nav-item:last-child {
+    margin-right: 0; /* Remove margin from the last item */
+}
+
+.footer {
+    background-color: #ffffff; /* Ensure the background is white */
+    padding: 20px 0;
+    color: #282830; /* Set the text color */
+}
+
+.footer .container {
+    max-width: 1140px; /* Adjust the max width to match the cards */
+    margin: 0 auto; /* Center the container */
+    padding: 0 15px; /* Add some padding for spacing */
+}
+
+.footer .row {
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out the columns evenly */
+    flex-wrap: nowrap; /* Prevent wrapping to keep everything in one line */
+}
+
+.footer h5 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer p {
+    margin: 0;
+    line-height: 1.5;
+    color: #282830; /* Set the text color to match the other text */
+}
+
+.footer a {
+    color: #282830; /* Set the link color to match the other text */
+    text-decoration: none;
+    margin-right: 10px; /* Space between social icons */
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.footer .col-md-3 {
+    flex: 1; /* Allow the columns to grow equally */
+    padding: 10px;
+    min-width: 200px; /* Ensure a minimum width for smaller screens */
+}
+
+.footer .fa {
+    font-size: 1.5rem; /* Reduce the size of the social icons */
+    margin-right: 10px; /* Add space between social icons */
+}
+
+.separator {
+    border: none;
+    border-top: 2px solid rgba(44, 8, 8, 0.301); /* Traité de séparation noir */
+    background-color: white; /* Fond blanc */
+}
+
+/* Style for the Book Us button in the header */
+.navbar-nav .btn-outline-dark {
+    background-color: #007bff; /* Blue color */
+    border-color: #007bff; /* Blue border color */
+    color: #fff; /* White text color */
+}
+
+.navbar-nav .btn-outline-dark:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    border-color: #0056b3; /* Darker blue border on hover */
+    color: #fff; /* White text color */
+}
+
+/* Ensure consistency for the Book now buttons */
+.btn-primary {
+    background-color: #007bff; /* Blue color */
+    border-color: #007bff; /* Blue border color */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    border-color: #0056b3; /* Darker blue border on hover */
+}
+
+/* Booking Page Styles */
+.booking-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.booking-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.form-section {
+    flex: 1 1 45%;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.form-section h2 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="email"],
+form input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.phone-container {
+    display: flex;
+    gap: 10px;
+}
+
+.programs,
+.experts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.program-btn,
+.expert {
+    flex: 1 1 30%;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.program-btn.selected,
+.expert.selected {
+    border-color: #000;
+}
+
+.appointments {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.appointments p {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn[disabled] {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.booking-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.details-section, .program-section, .expert-section, .appointments-section, .book-now-section {
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+}
+
+.client-details, .contact-details {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.program-options, .expert-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.program-btn, .expert-card {
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.program-btn:hover, .expert-card:hover {
+    background-color: #f0f0f0;
+}
+
+.program-btn:active, .expert-card:active {
+    background-color: #ddd;
+}
+
+.expert-card {
+    display: flex;
+    align-items: center;
+}
+
+.expert-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.appointments-section {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.btn-book {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-book:disabled {
+    background-color: #ccc;
+}
+
+.btn-book:hover:enabled {
+    background-color: #0056b3;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #282830;
+    background-color: #ffffff; /* White background */
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.booking-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff; /* White background for the booking container */
+}
+
+.booking-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.form-section {
+    flex: 1 1 45%;
+    background-color: #f7f7f7;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.form-section h2 {
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+form input[type="text"],
+form input[type="date"],
+form input[type="email"],
+form input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.phone-container {
+    display: flex;
+    gap: 10px;
+}
+
+.programs,
+.experts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.program-btn,
+.expert {
+    flex: 1 1 30%;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.program-btn.selected,
+.expert.selected {
+    border-color: #000;
+}
+
+.appointments {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.appointments p {
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    background-color: #007BFF;
+    color: #fff;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn[disabled] {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+.booking-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+}
+
+.details-section, .program-section, .expert-section, .appointments-section, .book-now-section {
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 20px;
+}
+
+.client-details, .contact-details {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.program-options, .expert-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.program-btn, .expert-card {
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.program-btn:hover, .expert-card:hover {
+    background-color: #f0f0f0;
+}
+
+.program-btn:active, .expert-card:active {
+    background-color: #ddd;
+}
+
+.expert-card {
+    display: flex;
+    align-items: center;
+}
+
+.expert-card img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.appointments-section {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.btn-book {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.btn-book:disabled {
+    background-color: #ccc;
+}
+
+.btn-book:hover:enabled {
+    background-color: #0056b3;
+}
+
+#calendar {
+    margin: 20px 0;
+}
+
+.booking-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Ajouté pour centrer verticalement */
+    margin: 20px auto; /* Ajouté pour centrer horizontalement */
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #fff; /* White background for the booking container */
+}
+
+
+.booking-confirmation-container {
+    text-align: center;
+    margin: 50px auto;
+    padding: 20px;
+    max-width: 600px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.booking-confirmation-container h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.booking-confirmation-container p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.booking-confirmation-container .btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
